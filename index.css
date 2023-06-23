@@ -25,6 +25,8 @@ body {
     line-height: 1.5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
+    margin-inline: auto;
+    max-width: 1200px;
 }
 
 .container {
@@ -198,6 +200,10 @@ span {
     border-radius: 20px;
 }
 
+.block-width {
+    width: 50;
+}
+
 .fs-small {
     font-size: .8rem;
 
@@ -228,6 +234,7 @@ span {
 
 .person-card>img {
     border-radius: 15px;
+    width: 100%;
 }
 
 
@@ -240,6 +247,7 @@ span {
     max-width: 5rem;
     border-radius: 10px;
 }
+
 
 
 
@@ -291,4 +299,123 @@ footer p {
 
 footer a {
     color: white;
+}
+
+
+
+
+/* Responsive bigger screen size */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(27, 117, 65);
+        font-size: 1.1rem;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 900px) {
+    body {
+        background-color: lightblue;
+        font-size: 1.3rem;
+    }
+
+    .list-item {
+        display: initial;
+    }
+
+    .nav>svg {
+        display: none;
+    }
+
+    #section-one p,
+    #section-one h2,
+    #form-one,
+    #section-two>h2 {
+        width: 60%;
+        padding-inline: 5rem;
+    }
+
+    input {
+        min-width: 80%;
+    }
+
+    .register-email {
+        justify-content: space-between;
+    }
+
+    #stacks {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: 1rem;
+        padding-inline: 2rem;
+    }
+
+    #section-two>.sec-card {
+        width: 36%;
+        padding-inline: 3rem;
+    }
+
+    #section-two {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+
+        position: relative;
+
+
+    }
+
+
+
+    #section-two .head-text {
+        width: 100%;
+
+    }
+
+    .sec-card:nth-of-type(3) {
+        align-self: flex-end;
+        margin-block-start: 6rem;
+
+    }
+
+    #see-more {
+        position: absolute;
+        right: 2rem;
+        bottom: 0;
+
+    }
+
+
+
+    #section-three {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+    }
+
+    #section-three>div:nth-of-type(1) {
+        width: 30%;
+    }
+
+    #section-three>div:nth-of-type(2) {
+
+        width: 50%;
+    }
+
+    #section-three>blockquote {
+        width: 90%;
+    }
+
+
 }
