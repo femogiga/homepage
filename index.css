@@ -262,26 +262,33 @@ span {
 
 #footer-input-wrapper {
     position: relative;
-    color: white
+    color: white;
+    max-width: 25rem;
+
 }
+
 
 #footer-input-wrapper>button {
     position: absolute;
-    /* left: 152px; */
-    top: 4.4px;
-    left: 15.75em
+    top: .1rem;
+    right:-1rem;
+    padding-inline: 1rem;
+
+
 }
 
 #footer-input-wrapper>input[type='email'] {
-    position: absolute;
+inline-size: 100%;
     left: 0;
-    padding: .8rem;
+    padding: .6rem;
     border-radius: 15px;
     outline: none;
     border: none;
     color: white;
-    width: 15em;
-    max-width: 15em;
+    width: 100%;
+     /* max-width: 100%; */
+    min-width: 15rem;
+
 
 }
 
@@ -306,11 +313,27 @@ footer a {
 
 /* Responsive bigger screen size */
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     body {
         background-color: rgb(27, 117, 65);
         font-size: 1.1rem;
     }
+    footer {
+        width: 90%;
+    }
+
+    #footer-input-wrapper>button {
+
+        right:-.9rem;
+        top:.2rem;
+    }
+    #footer-input-wrapper {
+        position: relative;
+        color: white;
+        max-width: 25rem;
+
+    }
+
 
 
 }
@@ -416,6 +439,21 @@ footer a {
     #section-three>blockquote {
         width: 90%;
     }
+
+
+
+    #footer-cont {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footer-input-wrapper>button {
+
+        right:-1rem;
+        top:.3rem
+    }
+
 
 
 }
