@@ -107,12 +107,13 @@ main {
 }
 
 .register-email {
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .register-email>input,
+.textbox,
 .register-email>button {
-    padding: .7rem;
+    padding: .65rem;
 
 }
 
@@ -154,8 +155,6 @@ main {
 
 
 
-
-
 .sec-card img {
     border-radius: 20px;
 }
@@ -180,4 +179,30 @@ main {
 .decorate img {
     max-width: 5rem;
     border-radius: 10px;
+}
+
+
+.join-us-button {
+    padding: .6rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: hsl(var(--color-blue));
+    color: white;
+}
+
+#footer-input-wrapper {
+    position: relative;
+}
+
+#footer-input-wrapper>input[type='submit'] {
+    position: absolute;
+    left: 130px;
+    top: 3px
+}
+
+#footer-input-wrapper>input[type='email'] {
+    position: absolute;
+    left: 0;
+
 }
