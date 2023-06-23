@@ -2,6 +2,9 @@
     --color-blue: 217 87% 55%;
     --color-accent: 0 0% 80%;
     --color-black: 0 0 0;
+    --color-white: 255 255 255;
+    --color-red: 255 0 0;
+    --color-green: 17 153 71;
 }
 
 *,
@@ -13,18 +16,18 @@
 
 .hero {
     width: 99%;
-    background-color: aqua;
     margin-inline: auto;
 }
 
 body {
     line-height: 1.5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1rem;
 }
 
 .container {
     width: 90;
-    background-color: burlywood;
+
     padding-inline: .5rem;
 }
 
@@ -46,6 +49,10 @@ fieldset {
 
 img {
     max-width: 100%;
+}
+
+input {
+    font: inherit;
 }
 
 .pad-2 {
@@ -103,7 +110,7 @@ img {
 }
 
 main {
-    background-color: red
+    /* background-color: red */
 }
 
 .register-email {
@@ -125,6 +132,12 @@ main {
     color: white;
 }
 
+.img-cont > img{
+    aspect-ratio: 2/1;
+    border-radius: 20px;
+    object-fit:cover;
+}
+
 
 
 .icon {
@@ -132,6 +145,11 @@ main {
     background-color: chartreuse;
     color: white;
     font-size: 10px;
+    border-radius: 10px;
+}
+
+span{
+    font-size: 1.5rem;
 }
 
 .button {
@@ -152,6 +170,14 @@ main {
 
 }
 
+.code {
+    background-color: rgb(var(--color-green)/.95);
+}
+
+.category {
+    background-color: rgb(var(--color-red)/.65);
+}
+
 
 
 
@@ -160,10 +186,31 @@ main {
     border-radius: 20px;
 }
 
-.sec-card>p {
+.fs-small {
     font-size: .8rem;
-    color: rgb(var(--color-black)/.4);
+
+
+}
+
+.bold {
     font-weight: bold;
+}
+
+.fs-clr-accent {
+    color: rgb(var(--color-black)/.62);
+}
+
+.fs-clr-white {
+    color: rgb(var(--color-white))
+}
+
+
+.fs-clr-red {
+    color: rgb(var(--color-red)/.65);
+}
+
+.fs-clr-blue {
+    color: hsl(var(--color-blue));
 }
 
 
@@ -181,3 +228,49 @@ main {
     max-width: 5rem;
     border-radius: 10px;
 }
+<<<<<<< Updated upstream
+=======
+
+
+.join-us-button {
+    padding: .8rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: hsl(var(--color-blue));
+    color: white;
+}
+
+#footer-input-wrapper {
+    position: relative;
+    color: white
+}
+
+#footer-input-wrapper>button {
+    position: absolute;
+    left: 152px;
+    top: 4.4px;
+}
+
+#footer-input-wrapper>input[type='email'] {
+    position: absolute;
+    left: 0;
+
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    padding-block: 2rem 9rem;
+}
+
+footer p {
+    font: white;
+}
+
+
+
+footer a {
+    color: white;
+}
+>>>>>>> Stashed changes
