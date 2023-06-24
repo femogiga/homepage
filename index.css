@@ -1,3 +1,21 @@
+@font-face {
+    font-family: "Outfit";
+    src: url("./homepage/Outfit_Complete/Fonts/WEB/fonts/Outfit-Black.woff2") format("woff2"),
+        url("./homepage/Outfit_Complete/Fonts/WEB/fonts/Outfit-Black.woff") format("woff"),
+        url("./homepage/Outfit_Complete/Fonts/WEB/fonts/Outfit-Black.eot") format("eot"),
+        url("./homepage/Outfit_Complete/Fonts/WEB/fonts/Outfit-light.eot") format("eot"),
+        url("./homepage/Outfit_Complete/Fonts/WEB/fonts/Outfit-Black.eot") format("eot"),
+        url("./homepage/Outfit_Complete/Fonts/WEB/fonts/Outfit-light.eot") format("eot");
+    /* Add additional font formats if available */
+
+    /* Optional font properties */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
 :root {
     --color-blue: 217 87% 55%;
     --color-accent: 0 0% 80%;
@@ -23,10 +41,11 @@
 
 body {
     line-height: 1.5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     margin-inline: auto;
     max-width: 1200px;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -40,6 +59,7 @@ body {
 
 a {
     text-decoration: none;
+
 }
 
 ul {
@@ -116,6 +136,17 @@ input[type="text"] {
 
 .list-item {
     display: none;
+
+}
+
+.list-item a {
+    color: red;
+}
+
+.list-item>a:hover {
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-decoration-color: blue;
 }
 
 .nav {
@@ -147,19 +178,38 @@ main {
 }
 
 .img-cont>img {
-    aspect-ratio: 2/1;
+    /* aspect-ratio: ; */
     border-radius: 20px;
     object-fit: cover;
 }
 
+@keyframes jiggle {
+    0% {
+        transform: rotate(3deg)
+    }
+
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+
+button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
 
 
 .icon {
     padding: 1rem;
-    background-color: chartreuse;
+
     color: white;
     font-size: 10px;
     border-radius: 10px;
+
+}
+
+.jiggle {
+    animation: jiggle .2s 5 .1s ease-in;
 }
 
 span {
@@ -271,14 +321,14 @@ span {
 #footer-input-wrapper>button {
     position: absolute;
     top: .1rem;
-    right:-1rem;
+    right: -1rem;
     padding-inline: 1rem;
 
 
 }
 
 #footer-input-wrapper>input[type='email'] {
-inline-size: 100%;
+    inline-size: 100%;
     left: 0;
     padding: .6rem;
     border-radius: 15px;
@@ -286,7 +336,7 @@ inline-size: 100%;
     border: none;
     color: white;
     width: 100%;
-     /* max-width: 100%; */
+    /* max-width: 100%; */
     min-width: 15rem;
 
 
@@ -311,22 +361,26 @@ footer a {
 
 
 
+
+
 /* Responsive bigger screen size */
 
 @media screen and (min-width: 600px) {
     body {
-        background-color: rgb(27, 117, 65);
+
         font-size: 1.1rem;
     }
+
     footer {
         width: 90%;
     }
 
     #footer-input-wrapper>button {
 
-        right:-.9rem;
-        top:.2rem;
+        right: -.9rem;
+        top: .2rem;
     }
+
     #footer-input-wrapper {
         position: relative;
         color: white;
@@ -342,7 +396,7 @@ footer a {
 
 @media only screen and (min-width: 900px) {
     body {
-        background-color: lightblue;
+
         font-size: 1.3rem;
     }
 
@@ -450,8 +504,8 @@ footer a {
 
     #footer-input-wrapper>button {
 
-        right:-1rem;
-        top:.3rem
+        right: -1rem;
+        top: .3rem
     }
 
 
